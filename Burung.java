@@ -1,6 +1,13 @@
 
 public class Burung {
 
+    public static void main(String[] args) {
+        Burung burung1 = new Burung("Kakatua");
+        burung1.aturumur(5);
+        burung1.ambilumur();
+        System.out.println("Nilai  variabel: " + burung1.umurBurung);
+    }
+
     int umurBurung;
 
     public Burung(String nama) {
@@ -14,12 +21,5 @@ public class Burung {
     public int ambilumur() {
         System.out.println("umur Burung: " + umurBurung + "tahun");
         return umurBurung;
-    }
-
-    public static void main(String[] args) {
-        Burung burung1 = new Burung("Kakatua");
-        burung1.aturumur(5);
-        burung1.ambilumur();
-        System.out.println("Nilai  variabel: " + burung1.umurBurung);
     }
 }
