@@ -1,26 +1,32 @@
+// Nama file: teskaryawan.java
 
-public class karyawan {
+public class teskaryawan {
 
     public static void main(String[] args) {
-        karyawan kar1 = new karyawan("Andi");
-        kar1.umurkaryawan(30);
-        kar1.poskar("Manager");
-        kar1.gajikar(2500000);
-        kar1.tampilKar();
-        karyawan kar2 = new karyawan("Siti");
-        kar2.umurkaryawan(26);
-        kar2.poskar("Data Analyst");
-        kar2.gajikar(7500000);
-        // Memanggil method tampilKar() yang ada di file karyawan.java
-        kar2.tampilKar();
-    }
+        // Membuat objek dari class karyawan
+        karyawan karsatu = new karyawan("Joni");
+        karyawan kardua = new karyawan("Budi");
 
+        // Mengatur data karsatu
+        karsatu.umurkaryawan(25);
+        karsatu.poskar("Cyber Security Engineer");
+        karsatu.gajikar(250000000);
+        // Memanggil method tampilKar() yang ada di file karyawan.java
+        karsatu.tampilKar();
+
+        // Mengatur data kardua
+        kardua.umurkaryawan(26);
+        kardua.poskar("Data Analyst");
+        kardua.gajikar(1000000);
+        // Memanggil method tampilKar() yang ada di file karyawan.java
+        kardua.tampilKar();
+    }
     String nama;
     int umur;
     String posisi;
     double gaji;
 
-    public karyawan(String nama) {
+    public teskaryawan(String nama) {
         this.nama = nama;
     }
 
@@ -43,4 +49,6 @@ public class karyawan {
         System.out.println("Gaji Karyawan: Rp " + gaji);
 
     }
+
+    // Method 'tampilaknKaryawan()' yang error tadi HAPUS dari sini
 }
